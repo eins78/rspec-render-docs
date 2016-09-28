@@ -1,0 +1,11 @@
+#!/bin/bash
+set -eu
+
+PKG_DIR="$(dirname "${BASH_SOURCE}")/$(dirname "$(readlink "${BASH_SOURCE}")")/.."
+
+bundle exec rspec \
+  --dry-run \
+  --order defined \
+  --require "${PKG_DIR}/rspec/json_formatter_with_more_info.rb" \
+  --format JsonFormatterWithMoreInfo \
+  "$1"

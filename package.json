@@ -2,9 +2,20 @@
   "name": "rspec-render-docs",
   "version": "1.0.0-alpha.1",
   "description": "render readable docs from `rspec` JSON output",
-  "main": "render.js",
+  "main": "rspec-render-docs.js",
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "bin": {
+    "rspec-render-docs": "bin/rspec-render-docs",
+    "rspec-to-json": "bin/rspec-to-json"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "rspec-docs": "babel-node ./rspec-render-docs.js",
+    "test": "npm run -s lint",
+    "lint": "standard --verbose --fix *.js **/*.js"
   },
   "keywords": [
     "rspec",
@@ -15,5 +26,17 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/eins78/rspec-render-docs"
+  },
+  "dependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-preset-react-app": "^0.2.1",
+    "file-or-stdin": "^1.0.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-markdown": "^2.4.2",
+    "react-syntax-highlighter": "^2.7.0"
+  },
+  "devDependencies": {
+    "standard": "^8.2.0"
   }
 }
