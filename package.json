@@ -2,12 +2,7 @@
   "name": "rspec-render-docs",
   "version": "1.0.0-alpha.1",
   "description": "render readable docs from `rspec` JSON output",
-  "main": "rspec-render-docs.js",
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
-  },
+  "jsnext:main": "src/rspec-render-docs.js",
   "bin": {
     "rspec-render-docs": "bin/rspec-render-docs",
     "rspec-to-json": "bin/rspec-to-json"
@@ -15,7 +10,29 @@
   "scripts": {
     "rspec-docs": "babel-node ./rspec-render-docs.js",
     "test": "npm run -s lint",
-    "lint": "standard --verbose --fix *.js **/*.js"
+    "prepublish": "npm run -s test && npm run -s build",
+    "build": "echo '#!/usr/bin/env node' >bin/rspec-render-docs && NODE_ENV=production browserify --node -t babelify src/rspec-render-docs.js | uglifyjs >>bin/rspec-render-docs && chmod +x bin/rspec-render-docs",
+    "lint": "standard --verbose *.js **/*.js"
+  },
+  "files": [
+    "bin", "rspec", "src"
+  ],
+  "devDependencies": {
+    "active-lodash": "^1.2.2",
+    "babel-preset-react-app": "^0.2.1",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-markdown": "^2.4.2",
+    "react-syntax-highlighter": "^2.7.0",
+    "standard": "^8.2.0",
+    "uglify": "^0.1.5"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
   },
   "keywords": [
     "rspec",
@@ -26,17 +43,5 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/eins78/rspec-render-docs"
-  },
-  "dependencies": {
-    "babel-cli": "^6.14.0",
-    "babel-preset-react-app": "^0.2.1",
-    "file-or-stdin": "^1.0.0",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "react-markdown": "^2.4.2",
-    "react-syntax-highlighter": "^2.7.0"
-  },
-  "devDependencies": {
-    "standard": "^8.2.0"
   }
 }

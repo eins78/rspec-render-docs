@@ -1,5 +1,7 @@
-// node shell script to render docs from JSON
-//
+#!/usr/bin/env node
+
+// script to render (HTML) docs from rspec data
+
 import fs from 'fs'
 import f from 'active-lodash'
 import { renderToStaticMarkup as renderReact } from 'react-dom/server'
@@ -11,7 +13,7 @@ const opts = {
   pageTitle: 'Madek Features',
   versionLinkPath: 'https://ci.zhdk.ch/cider-ci/ui/workspace/trees/',
   sourceCodeUrlPath: 'https://github.com/Madek/madek-webapp/',
-  showUselessSteps: true // show 1 line of step - title will be the same (currently all)
+  showUselessSteps: false // show 1 line of step - title will be the same (currently all)
 }
 
 // read JSON data
