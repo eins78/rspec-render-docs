@@ -1,6 +1,6 @@
 {
   "name": "@eins78/rspec-render-docs",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "render readable docs from `rspec` JSON output",
   "jsnext:main": "src/rspec-render-docs.js",
   "bin": {
