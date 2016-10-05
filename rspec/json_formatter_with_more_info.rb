@@ -1,7 +1,6 @@
 # extends the RSpec JSON formatter to output more information
 # - top-level: git info
 # - examples: source and (custom) metadata
-
 class JsonFormatterWithMoreInfo < RSpec::Core::Formatters::JsonFormatter
   RSpec::Core::Formatters.register self
 
@@ -35,7 +34,6 @@ class JsonFormatterWithMoreInfo < RSpec::Core::Formatters::JsonFormatter
   end
 
   # totally private
-
   def extract_ruby_block_source(str)
     # gets just the source from the block argument of a method call (`do … end`)
     return unless str.is_a?(String)
