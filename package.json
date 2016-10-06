@@ -1,6 +1,6 @@
 {
   "name": "@eins78/rspec-render-docs",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "description": "render readable docs from `rspec` JSON output",
   "jsnext:main": "src/rspec-render-docs.js",
   "bin": {
@@ -16,7 +16,9 @@
     "lint": "standard --verbose *.js **/*.js"
   },
   "files": [
-    "bin", "rspec", "src"
+    "bin",
+    "rspec",
+    "src"
   ],
   "devDependencies": {
     "active-lodash": "^1.2.2",
@@ -26,7 +28,7 @@
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-markdown": "^2.4.2",
-    "react-syntax-highlighter": "^2.7.0",
+    "react-syntax-highlighter": "^2.9.0",
     "standard": "^8.2.0",
     "standard": "^8.3.0",
     "uglify": "^0.1.5"
