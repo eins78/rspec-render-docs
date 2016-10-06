@@ -28,6 +28,7 @@
     "react-markdown": "^2.4.2",
     "react-syntax-highlighter": "^2.7.0",
     "standard": "^8.2.0",
+    "standard": "^8.3.0",
     "uglify": "^0.1.5"
   },
   "babel": {
