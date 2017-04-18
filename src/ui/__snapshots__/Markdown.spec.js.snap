@@ -1,0 +1,59 @@
+exports[`test renders example 1 1`] = `
+<div>
+  plain text
+</div>
+`;
+
+exports[`test renders example 2 1`] = `
+<div>
+  <em>
+    expected
+  </em>
+   
+  <strong>
+    inline
+  </strong>
+   
+  <code
+    data-sourcepos={undefined}>
+    markdown
+  </code>
+   
+  <strong>
+    <em>
+      content
+    </em>
+  </strong>
+   
+  <em>
+    <code
+      data-sourcepos={undefined}>
+      yay
+    </code>
+  </em>
+</div>
+`;
+
+exports[`test renders example 3 1`] = `
+<div>
+  content with blocks like
+  Block-Level Heading
+  and other 
+  <strong>
+    <em>
+      non-inline
+    </em>
+  </strong>
+   markdown
+  is not allowed
+  but will be output as plain text
+</div>
+`;
+
+exports[`test renders example 4 1`] = `
+<div>
+  any 
+  html tags
+   are stripped as well
+</div>
+`;

@@ -1,0 +1,934 @@
+exports[`test renders 1`] = `
+<html>
+  <head>
+    <meta
+      charSet="utf-8" />
+    <title />
+    <link
+      href="https://cdn.rawgit.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css"
+      rel="stylesheet" />
+    <style>
+      .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 980px; margin: 0 auto; padding: 45px;}
+    </style>
+  </head>
+  <body
+    className="markdown-body">
+    <header>
+      <h1>
+        undefined 
+      </h1>
+      <p>
+        generated from RSpec test output
+      </p>
+      <h2>
+        Overview
+      </h2>
+    </header>
+    <aside
+      id="TableOfContents">
+      <ul>
+        <li>
+          <a
+            href="#rspec-section"
+            id={null}>
+            <div>
+              Rspec
+              _
+              Section
+            </div>
+          </a>
+        </li>
+        <ul>
+          <li>
+            <a
+              href="#rspec-section"
+              id={null}>
+              <div>
+                Rspec
+                _
+                Section
+              </div>
+            </a>
+          </li>
+          <ul>
+            <li>
+              <a
+                href="#rspec-section-example-title"
+                id={null}>
+                <div>
+                  Example
+                  _
+                  Title
+                </div>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#rspec-section-example-title-2"
+                id={null}>
+                <div>
+                  Example
+                  _
+                  Title
+                  _
+                  2
+                </div>
+              </a>
+            </li>
+          </ul>
+        </ul>
+      </ul>
+    </aside>
+    <hr />
+    <article>
+      <section>
+        <h2
+          style={
+            Object {
+              "display": "none",
+            }
+          }>
+          <a
+            href="#rspec-section"
+            id={null}>
+            <div>
+              Rspec
+              _
+              Section
+            </div>
+          </a>
+        </h2>
+        <h3>
+          <a
+            href="#rspec-section"
+            id="rspec-section">
+            <div>
+              Rspec
+              _
+              Section
+            </div>
+          </a>
+        </h3>
+        <h4>
+          <a
+            href="#rspec-section-example-title"
+            id="rspec-section-example-title">
+            <div>
+              Example
+              _
+              Title
+            </div>
+          </a>
+        </h4>
+        <div>
+          <h6>
+            Steps
+          </h6>
+          <div>
+            <p>
+              Example_Title
+            </p>
+          </div>
+          <h6>
+            Source 
+            <a
+              href="undefined./blob/master/spec/features/example_spec.rb#L13"
+              style={
+                Object {
+                  "float": "right",
+                }
+              }>
+              <kbd>
+                spec/features/example_spec.rb:13
+              </kbd>
+            </a>
+          </h6>
+          <pre
+            style={
+              Object {
+                "background": null,
+                "color": "#333333",
+                "display": "block",
+                "overflowX": "auto",
+                "padding": "0.5em",
+              }
+            }>
+            <code>
+              expect(
+              <span
+                style={Object {}}>
+                1
+              </span>
+              )
+                    .to eq 
+              <span
+                style={Object {}}>
+                1
+              </span>
+            </code>
+          </pre>
+          <div
+            className="hook-debug"
+            style={
+              Object {
+                "display": "none",
+              }
+            }>
+            <pre
+              style={
+                Object {
+                  "background": null,
+                  "color": "#333333",
+                  "display": "block",
+                  "overflowX": "auto",
+                  "padding": "0.5em",
+                }
+              }>
+              <code>
+                  example 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \'Example_Title\'
+                </span>
+                 
+                <span
+                  style={
+                    Object {
+                      "color": "#a71d5d",
+                    }
+                  }>
+                  do
+                </span>
+                
+                    expect(
+                <span
+                  style={Object {}}>
+                  1
+                </span>
+                )
+                      .to eq 
+                <span
+                  style={Object {}}>
+                  1
+                </span>
+                
+                
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#a71d5d",
+                    }
+                  }>
+                  end
+                </span>
+                
+                
+              </code>
+            </pre>
+            <pre
+              style={
+                Object {
+                  "background": null,
+                  "color": "#333333",
+                  "display": "block",
+                  "overflowX": "auto",
+                  "padding": "0.5em",
+                }
+              }>
+              <code>
+                {
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"description\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"Example_Title\"
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"full_description\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"Rspec_Section Example_Title\"
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"status\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"passed\"
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"file_path\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"./spec/features/example_spec.rb\"
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"line_number\"
+                </span>
+                : 
+                <span
+                  style={Object {}}>
+                  13
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"run_time\"
+                </span>
+                : 
+                <span
+                  style={Object {}}>
+                  0.00001
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"pending_message\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#0086b3",
+                    }
+                  }>
+                  null
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"scoped_id\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"1:1\"
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"type\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"feature\"
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"example_group\"
+                </span>
+                : {
+                    
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"scoped_id\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"1\"
+                </span>
+                ,
+                    
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"description\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"Rspec_Section\"
+                </span>
+                ,
+                    
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"full_description\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"Rspec_Section\"
+                </span>
+                
+                  },
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"source\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"  example \'Example_Title\' do\\n    expect(1)\\n      .to eq 1\\n\\n  end\\n\"
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"source_block\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"expect(1)\\n      .to eq 1\"
+                </span>
+                
+                }
+              </code>
+            </pre>
+          </div>
+        </div>
+        <hr />
+        <h4>
+          <a
+            href="#rspec-section-example-title-2"
+            id="rspec-section-example-title-2">
+            <div>
+              Example
+              _
+              Title
+              _
+              2
+            </div>
+          </a>
+        </h4>
+        <div>
+          <h6>
+            Steps
+          </h6>
+          <div>
+            <p>
+              Example_Title_2
+            </p>
+          </div>
+          <h6>
+            Source 
+            <a
+              href="undefined./blob/master/spec/features/example_spec.rb#L26"
+              style={
+                Object {
+                  "float": "right",
+                }
+              }>
+              <kbd>
+                spec/features/example_spec.rb:26
+              </kbd>
+            </a>
+          </h6>
+          <pre
+            style={
+              Object {
+                "background": null,
+                "color": "#333333",
+                "display": "block",
+                "overflowX": "auto",
+                "padding": "0.5em",
+              }
+            }>
+            <code>
+              expect(
+              <span
+                style={Object {}}>
+                1
+              </span>
+              )
+                    .to eq 
+              <span
+                style={Object {}}>
+                2
+              </span>
+            </code>
+          </pre>
+          <div
+            className="hook-debug"
+            style={
+              Object {
+                "display": "none",
+              }
+            }>
+            <pre
+              style={
+                Object {
+                  "background": null,
+                  "color": "#333333",
+                  "display": "block",
+                  "overflowX": "auto",
+                  "padding": "0.5em",
+                }
+              }>
+              <code>
+                  pending 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \'Example_Title\'
+                </span>
+                 
+                <span
+                  style={
+                    Object {
+                      "color": "#a71d5d",
+                    }
+                  }>
+                  do
+                </span>
+                
+                    expect(
+                <span
+                  style={Object {}}>
+                  1
+                </span>
+                )
+                      .to eq 
+                <span
+                  style={Object {}}>
+                  2
+                </span>
+                
+                
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#a71d5d",
+                    }
+                  }>
+                  end
+                </span>
+                
+                
+              </code>
+            </pre>
+            <pre
+              style={
+                Object {
+                  "background": null,
+                  "color": "#333333",
+                  "display": "block",
+                  "overflowX": "auto",
+                  "padding": "0.5em",
+                }
+              }>
+              <code>
+                {
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"description\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"Example_Title_2\"
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"full_description\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"Rspec_Section Example_Title_2\"
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"status\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"pending\"
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"file_path\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"./spec/features/example_spec.rb\"
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"line_number\"
+                </span>
+                : 
+                <span
+                  style={Object {}}>
+                  26
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"run_time\"
+                </span>
+                : 
+                <span
+                  style={Object {}}>
+                  0.00001
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"pending_message\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#0086b3",
+                    }
+                  }>
+                  null
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"scoped_id\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"1:2\"
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"type\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"feature\"
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"example_group\"
+                </span>
+                : {
+                    
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"scoped_id\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"1\"
+                </span>
+                ,
+                    
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"description\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"Rspec_Section\"
+                </span>
+                ,
+                    
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"full_description\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"Rspec_Section\"
+                </span>
+                
+                  },
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"source\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"  pending \'Example_Title\' do\\n    expect(1)\\n      .to eq 2\\n\\n  end\\n\"
+                </span>
+                ,
+                  
+                <span
+                  style={
+                    Object {
+                      "color": "#795da3",
+                    }
+                  }>
+                  \"source_block\"
+                </span>
+                : 
+                <span
+                  style={
+                    Object {
+                      "color": "#df5000",
+                    }
+                  }>
+                  \"expect(1)\\n      .to eq 2\"
+                </span>
+                
+                }
+              </code>
+            </pre>
+          </div>
+        </div>
+        <hr />
+      </section>
+    </article>
+  </body>
+</html>
+`;

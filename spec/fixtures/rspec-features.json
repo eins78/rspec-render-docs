@@ -1,0 +1,50 @@
+{
+  "version": "3.5.2",
+  "git_commit": "123412341",
+  "git_tree": "4567845678456784567845678456784567845678",
+  "examples": [
+    {
+      "description": "Example_Title",
+      "full_description": "Rspec_Section Example_Title",
+      "status": "passed",
+      "file_path": "./spec/features/example_spec.rb",
+      "line_number": 13,
+      "run_time": 0.00001,
+      "pending_message": null,
+      "scoped_id": "1:1",
+      "type": "feature",
+      "example_group": {
+        "scoped_id": "1",
+        "description": "Rspec_Section",
+        "full_description": "Rspec_Section"
+      },
+      "source": "  example 'Example_Title' do\n    expect(1)\n      .to eq 1\n\n  end\n",
+      "source_block": "expect(1)\n      .to eq 1"
+    },
+    {
+      "description": "Example_Title_2",
+      "full_description": "Rspec_Section Example_Title_2",
+      "status": "pending",
+      "file_path": "./spec/features/example_spec.rb",
+      "line_number": 26,
+      "run_time": 0.00001,
+      "pending_message": null,
+      "scoped_id": "1:2",
+      "type": "feature",
+      "example_group": {
+        "scoped_id": "1",
+        "description": "Rspec_Section",
+        "full_description": "Rspec_Section"
+      },
+      "source": "  pending 'Example_Title' do\n    expect(1)\n      .to eq 2\n\n  end\n",
+      "source_block": "expect(1)\n      .to eq 2"
+    }
+  ],
+  "summary": {
+    "duration": 0.002829,
+    "example_count": 2,
+    "failure_count": 0,
+    "pending_count": 1
+  },
+  "summary_line": "2 examples, 0 failures, 1 pending"
+}

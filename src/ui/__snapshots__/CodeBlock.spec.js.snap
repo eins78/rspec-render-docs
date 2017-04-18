@@ -1,0 +1,114 @@
+exports[`test renders 1`] = `
+<div>
+  <pre
+    style={
+      Object {
+        "background": null,
+        "color": "#333333",
+        "display": "block",
+        "overflowX": "auto",
+        "padding": "0.5em",
+      }
+    }>
+    <code>
+      
+        
+      <span
+        style={Object {}}>
+        <span
+          style={
+            Object {
+              "color": "#a71d5d",
+            }
+          }>
+          def
+        </span>
+         
+        <span
+          style={
+            Object {
+              "color": "#795da3",
+            }
+          }>
+          foo
+        </span>
+        <span
+          style={Object {}}>
+          (bar)
+        </span>
+      </span>
+      
+          bar ? bar.to_foo : 
+      <span
+        style={
+          Object {
+            "color": "#0086b3",
+          }
+        }>
+        nil
+      </span>
+      
+        
+      <span
+        style={
+          Object {
+            "color": "#a71d5d",
+          }
+        }>
+        end
+      </span>
+      
+      
+    </code>
+  </pre>
+  <pre
+    style={
+      Object {
+        "background": null,
+        "color": "#333333",
+        "display": "block",
+        "overflowX": "auto",
+        "padding": "0.5em",
+      }
+    }>
+    <code>
+      {
+        
+      <span
+        style={
+          Object {
+            "color": "#795da3",
+          }
+        }>
+        \"foo\"
+      </span>
+      : 
+      <span
+        style={
+          Object {
+            "color": "#df5000",
+          }
+        }>
+        \"bar\"
+      </span>
+      ,
+        
+      <span
+        style={
+          Object {
+            "color": "#795da3",
+          }
+        }>
+        \"baz\"
+      </span>
+      : 
+      <span
+        style={Object {}}>
+        1
+      </span>
+      
+      }
+    </code>
+  </pre>
+</div>
+`;

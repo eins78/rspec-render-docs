@@ -1,0 +1,54 @@
+exports[`test renders 1`] = `
+<ul>
+  <li>
+    <a
+      href="#rspec-section"
+      id={null}>
+      <div>
+        Rspec
+        _
+        Section
+      </div>
+    </a>
+  </li>
+  <ul>
+    <li>
+      <a
+        href="#rspec-section"
+        id={null}>
+        <div>
+          Rspec
+          _
+          Section
+        </div>
+      </a>
+    </li>
+    <ul>
+      <li>
+        <a
+          href="#rspec-section-example-title"
+          id={null}>
+          <div>
+            Example
+            _
+            Title
+          </div>
+        </a>
+      </li>
+      <li>
+        <a
+          href="#rspec-section-example-title-2"
+          id={null}>
+          <div>
+            Example
+            _
+            Title
+            _
+            2
+          </div>
+        </a>
+      </li>
+    </ul>
+  </ul>
+</ul>
+`;

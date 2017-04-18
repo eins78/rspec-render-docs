@@ -26,7 +26,7 @@ const opts = {
 // build chapters for view
 // NOTE: only supports 2 levels of nesting, so need to get full_description
 //       from example_group (but still only 1. line - title!)
-const buildChapters = ({ examples }) => f
+export const buildChapters = ({ examples }) => f
   .chain(examples)
   .sortBy(e => f.get(e, 'example_group.scoped_id'))
   .groupBy(e => f.first(f.get(e, 'example_group.full_description').split('\n')))
