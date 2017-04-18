@@ -1,11 +1,9 @@
 import React from 'react'
 import url from 'url'
-import f from 'active-lodash'
-const slugify = str => f.kebabCase(f.deburr(str))
 
-import { Md } from './Markdown'
 import Document from './Document'
-import ExampleSection from './ExampleSection'
+import TableOfContents from './TableOfContents'
+import Chapters from './Chapters'
 
 const RspecStory = ({ chapters, config }) => {
   const {
@@ -50,61 +48,3 @@ const RspecStory = ({ chapters, config }) => {
 }
 
 export default RspecStory
-
-// document-internal link from text, self-links when isHeading
-const NavLink = ({ text, isHeading, children }) => {
-  const slug = slugify(text || children)
-  return <a href={'#' + slug} id={isHeading ? slug : null}>{children}</a>
-}
-
-const TableOfContents = chapters => (
-  <ul>
-    {f.map(chapters, ([ title, sections ]) => [
-      <li><NavLink text={title}><Md>{title}</Md></NavLink></li>,
-      (<ul>
-        {f.map(sections, ([ title, examples ]) => [
-          <li><NavLink text={title}><Md>{title}</Md></NavLink></li>,
-          (<ul>
-            {f.map(examples, (example, n) => (
-              <li key={title + example.description + n}>
-                <NavLink text={`${title}-${example.description}`}>
-                  <Md>{example.description}</Md>
-                </NavLink>
-              </li>
-            ))}
-          </ul>)
-        ])}
-      </ul>)
-    ])}
-  </ul>
-)
-
-const Chapters = ({ chapters, sourceCodeLink, showUselessSteps }) => (
-  <article>
-    {f.map(chapters, ([ title, sections ]) => (
-      <section key={title}>
-        <h2 style={{ display: 'none' }}>
-          <NavLink text={title}><Md>{title}</Md></NavLink>
-        </h2>
-        {f.map(sections, ([ title, examples ], index) => [
-          (<h3>
-            <NavLink isHeading text={title}><Md>{title}</Md></NavLink>
-          </h3>),
-          f.map(examples, example => [
-            (<h4>
-              <NavLink isHeading text={`${title}-${example.description}`}>
-                <Md>{example.description}</Md>
-              </NavLink>
-            </h4>),
-            ExampleSection({
-              title,
-              example,
-              config: { sourceCodeLink, showUselessSteps }
-            }),
-            index < sections.length && <hr />
-          ])
-        ])}
-      </section>
-    ))}
-  </article>
-)

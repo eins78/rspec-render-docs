@@ -21,15 +21,14 @@
     "src"
   ],
   "devDependencies": {
-    "active-lodash": "^1.2.2",
     "babel-preset-react-app": "^0.2.1",
     "babelify": "^7.3.0",
     "browserify": "^13.1.0",
+    "lodash": "^4.17.4",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-markdown": "^2.4.2",
     "react-syntax-highlighter": "^2.9.0",
-    "standard": "^8.2.0",
     "standard": "^8.3.0",
     "uglify": "^0.1.5"
   },

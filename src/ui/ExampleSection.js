@@ -1,6 +1,7 @@
 import React from 'react'
 import url from 'url'
-import f from 'active-lodash'
+import isEmpty from 'lodash/isEmpty'
+import isNumber from 'lodash/isNumber'
 import ReactMarkdown from 'react-markdown'
 
 import CodeBlock from './CodeBlock'
@@ -12,11 +13,11 @@ const ExampleSection = ({ title, example, config }) => {
     example.line_number,
     example.source_block
   ]
-  const fileName = f.present(file_path) &&
+  const fileName = isEmpty(file_path) ||
     file_path.replace(/^\.\//, '') + (lineNumber ? ':' + lineNumber : '')
 
   const githubLink = fileName &&
-    f.isNumber(lineNumber) &&
+    isNumber(lineNumber) &&
     url.resolve(sourceCodeLink, file_path) +
       (lineNumber ? '#L' + lineNumber : '')
 

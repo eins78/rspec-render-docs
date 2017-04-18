@@ -3,7 +3,7 @@
 // script to render (HTML) docs from rspec data
 
 import fs from 'fs'
-import f from 'active-lodash'
+import f from 'lodash'
 import { buffer as getStdin } from 'get-stdin'
 import { renderToStaticMarkup as renderReact } from 'react-dom/server'
 import RspecStory from './ui/RspecStory'
@@ -24,30 +24,29 @@ const opts = {
 }
 
 // build chapters for view
-// NOTE: only supports 2 levels of nesting, so need to get full_description from example_group (but still only 1. line - title!)
-const buildChapters = rspecData =>
-  // TODO: .map((e) => f.merge(e, {slug: slugify()})) …
-  f(rspecData.examples)
-    .sortBy(ex => f.get(ex, 'example_group.scoped_id'))
-    .groupBy(
-      ex => f.first(f.get(ex, 'example_group.full_description').split('\n'))
-    )
-    .pairs()
-    .sortBy(([ key ]) => (key || '').toLowerCase())
-    .groupBy(([ key ]) => f.first(key.split(':')).trim())
-    .pairs()
-    .value()
+// NOTE: only supports 2 levels of nesting, so need to get full_description
+//       from example_group (but still only 1. line - title!)
+const buildChapters = ({ examples }) => f
+  .chain(examples)
+  .sortBy(e => f.get(e, 'example_group.scoped_id'))
+  .groupBy(e => f.first(f.get(e, 'example_group.full_description').split('\n')))
+  .toPairs()
+  .sortBy(([ key ]) => (key || '').toLowerCase())
+  .groupBy(([ key ]) => f.first(key.split(':')).trim())
+  .toPairs()
+  .value()
 
 const renderFromJSONString = str => {
   const rspecData = JSON.parse(str)
-  if (!f.present(f.get(rspecData, 'examples'))) throw new Error('No Data!')
+  if (f.isEmpty(f.get(rspecData, 'examples'))) throw new Error('No Data!')
 
   // build data for view
   const chapters = buildChapters(rspecData)
   const config = {
     ...opts,
     gitTree: rspecData.git_tree,
-    gitCommit: rspecData.git_commit
+    gitCommit: rspecData.git_commit,
+    summary: rspecData.summary
   }
 
   // output rendered view
