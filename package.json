@@ -14,7 +14,8 @@
     "test:ui": "react-scripts test --env=jsdom",
     "prepublish": "npm run -s test && npm run -s build",
     "build": "echo '#!/usr/bin/env node' >bin/rspec-render-docs && NODE_ENV=production browserify --node -t babelify src/rspec-render-docs.js | uglifyjs >>bin/rspec-render-docs && chmod +x bin/rspec-render-docs",
-    "lint": "standard --verbose *.js **/*.js"
+    "lint": "standard --verbose *.js **/*.js",
+    "postpublish": "greenkeeper-postpublish"
   },
   "files": [
     "bin",
@@ -25,6 +26,7 @@
     "babel-preset-react-app": "^0.2.1",
     "babelify": "^7.3.0",
     "browserify": "^13.1.0",
+    "greenkeeper-postpublish": "^1.0.1",
     "lodash": "^4.17.4",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
