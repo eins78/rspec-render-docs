@@ -30,11 +30,11 @@ const RspecStory = ({ chapters, config }) => {
         {versionLink && (
           <small style={{ float: 'right' }}>
             <span style={{ top: '0.25em', position: 'relative' }}>
-                  🌴
-                </span>
-          <a href={versionLink}><code>{gitTree.slice(0, 8)}</code></a>
-        </small>
-            )}
+              🌴
+            </span>
+            <a href={versionLink}><code>{gitTree.slice(0, 8)}</code></a>
+          </small>
+        )}
       </h1>
       <p>generated from RSpec test output</p>
     </header>

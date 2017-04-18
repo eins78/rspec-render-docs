@@ -13,7 +13,7 @@
     "test": "npm run -s lint && npm run -s test:jest",
     "test:jest": "react-scripts test --env=jsdom",
     "build": "echo '#!/usr/bin/env node' >bin/rspec-render-docs && NODE_ENV=production browserify --node -t babelify src/rspec-render-docs.js | uglifyjs >>bin/rspec-render-docs && chmod +x bin/rspec-render-docs",
-    "lint": "standard --verbose *.js **/*.js",
+    "lint": "standard --verbose *.js **/*.js **/*/*.js",
     "prepublish": "npm run -s build",
     "postpublish": "greenkeeper-postpublish"
   },
