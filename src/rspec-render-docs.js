@@ -36,11 +36,7 @@ export const buildChapters = ({ examples }) => f
   .toPairs()
   .value()
 
-const renderFromJSONString = str => {
-  const rspecData = JSON.parse(str)
-  if (f.isEmpty(f.get(rspecData, 'examples'))) throw new Error('No Data!')
-
-  // build data for view
+export const prepareData = rspecData => {
   const chapters = buildChapters(rspecData)
   const config = {
     ...opts,
@@ -48,10 +44,18 @@ const renderFromJSONString = str => {
     gitCommit: rspecData.git_commit,
     summary: rspecData.summary
   }
+  return { chapters, config }
+}
 
+const renderFromJSONString = str => {
+  // get data
+  const rspecData = JSON.parse(str)
+  if (f.isEmpty(f.get(rspecData, 'examples'))) throw new Error('No Data!')
+  // build data for view
+  const props = prepareData(rspecData)
   // output rendered view
   process.stdout.write(
-    '<!DOCTYPE html>' + renderReact(RspecStory({ chapters, config }))
+    '<!DOCTYPE html>' + renderReact(RspecStory(props))
   )
 }
 

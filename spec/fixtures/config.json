@@ -1,4 +1,10 @@
 {
   "sourceCodeLink": "https://code.example.com/repo/files/",
-  "showUselessSteps": true
+  "showUselessSteps": true,
+  "summary": {
+    "duration": 0.002829,
+    "example_count": 2,
+    "failure_count": 0,
+    "pending_count": 1
+  }
 }

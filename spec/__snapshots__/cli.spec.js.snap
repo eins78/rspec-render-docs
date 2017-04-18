@@ -1,0 +1,49 @@
+exports[`test renders the docs 1`] = `
+"<!DOCTYPE html><html><head><meta charset=\"utf-8\"/><title></title><link rel=\"stylesheet\" href=\"https://cdn.rawgit.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css\"/><style>.markdown-body { box-sizing: border-box; min-width: 200px; max-width: 980px; margin: 0 auto; padding: 45px;}</style></head><body class=\"markdown-body\"><header><h1>Madek Features <small style=\"float:right;\"><span style=\"top:0.25em;position:relative;\">🌴</span><a href=\"https://ci.zhdk.ch/cider-ci/ui/workspace/trees/4567845678456784567845678456784567845678\"><code>45678456</code></a></small></h1><p>generated from RSpec test output</p></header><section><h2>Overview</h2><p>Examples: <b>2</b> <mark>(1 pending)</mark><br/>Sections: Rspec_Section</p><aside id=\"TableOfContents\"><ul><li><a href=\"#rspec-section\"><div>Rspec_Section</div></a></li><ul><li><a href=\"#rspec-section\"><div>Rspec_Section</div></a></li><ul><li><a href=\"#rspec-section-example-title\"><div>Example_Title</div></a></li><li><a href=\"#rspec-section-example-title-2\"><div>Example_Title_2</div></a></li></ul></ul></ul></aside></section><hr/><article><section><h2 style=\"display:none;\"><a href=\"#rspec-section\"><div>Rspec_Section</div></a></h2><h3><a href=\"#rspec-section\" id=\"rspec-section\"><div>Rspec_Section</div></a></h3><h4><a href=\"#rspec-section-example-title\" id=\"rspec-section-example-title\"><div>Example_Title</div></a></h4><div><h6>Source <a href=\"https://github.com/Madek/madek-webapp/blob/123412341/spec/features/example_spec.rb#L13\" style=\"float:right;\"><kbd>spec/features/example_spec.rb:13</kbd></a></h6><pre style=\"display:block;padding:0.5em;color:#333333;overflow-x:auto;\"><code>expect(<span>1</span>)
+      .to eq <span>1</span></code></pre><div class=\"hook-debug\" style=\"display:none;\"><pre style=\"display:block;padding:0.5em;color:#333333;overflow-x:auto;\"><code>  example <span style=\"color:#df5000;\">&#x27;Example_Title&#x27;</span> <span style=\"color:#a71d5d;\">do</span>
+    expect(<span>1</span>)
+      .to eq <span>1</span>
+
+  <span style=\"color:#a71d5d;\">end</span>
+</code></pre><pre style=\"display:block;padding:0.5em;color:#333333;overflow-x:auto;\"><code>{
+  <span style=\"color:#795da3;\">&quot;description&quot;</span>: <span style=\"color:#df5000;\">&quot;Example_Title&quot;</span>,
+  <span style=\"color:#795da3;\">&quot;full_description&quot;</span>: <span style=\"color:#df5000;\">&quot;Rspec_Section Example_Title&quot;</span>,
+  <span style=\"color:#795da3;\">&quot;status&quot;</span>: <span style=\"color:#df5000;\">&quot;passed&quot;</span>,
+  <span style=\"color:#795da3;\">&quot;file_path&quot;</span>: <span style=\"color:#df5000;\">&quot;./spec/features/example_spec.rb&quot;</span>,
+  <span style=\"color:#795da3;\">&quot;line_number&quot;</span>: <span>13</span>,
+  <span style=\"color:#795da3;\">&quot;run_time&quot;</span>: <span>0.00001</span>,
+  <span style=\"color:#795da3;\">&quot;pending_message&quot;</span>: <span style=\"color:#0086b3;\">null</span>,
+  <span style=\"color:#795da3;\">&quot;scoped_id&quot;</span>: <span style=\"color:#df5000;\">&quot;1:1&quot;</span>,
+  <span style=\"color:#795da3;\">&quot;type&quot;</span>: <span style=\"color:#df5000;\">&quot;feature&quot;</span>,
+  <span style=\"color:#795da3;\">&quot;example_group&quot;</span>: {
+    <span style=\"color:#795da3;\">&quot;scoped_id&quot;</span>: <span style=\"color:#df5000;\">&quot;1&quot;</span>,
+    <span style=\"color:#795da3;\">&quot;description&quot;</span>: <span style=\"color:#df5000;\">&quot;Rspec_Section&quot;</span>,
+    <span style=\"color:#795da3;\">&quot;full_description&quot;</span>: <span style=\"color:#df5000;\">&quot;Rspec_Section&quot;</span>
+  },
+  <span style=\"color:#795da3;\">&quot;source&quot;</span>: <span style=\"color:#df5000;\">&quot;  example &#x27;Example_Title&#x27; do\\n    expect(1)\\n      .to eq 1\\n\\n  end\\n&quot;</span>,
+  <span style=\"color:#795da3;\">&quot;source_block&quot;</span>: <span style=\"color:#df5000;\">&quot;expect(1)\\n      .to eq 1&quot;</span>
+}</code></pre></div></div><hr/><h4><a href=\"#rspec-section-example-title-2\" id=\"rspec-section-example-title-2\"><div>Example_Title_2</div></a></h4><div><h6>Source <a href=\"https://github.com/Madek/madek-webapp/blob/123412341/spec/features/example_spec.rb#L26\" style=\"float:right;\"><kbd>spec/features/example_spec.rb:26</kbd></a></h6><pre style=\"display:block;padding:0.5em;color:#333333;overflow-x:auto;\"><code>expect(<span>1</span>)
+      .to eq <span>2</span></code></pre><div class=\"hook-debug\" style=\"display:none;\"><pre style=\"display:block;padding:0.5em;color:#333333;overflow-x:auto;\"><code>  pending <span style=\"color:#df5000;\">&#x27;Example_Title&#x27;</span> <span style=\"color:#a71d5d;\">do</span>
+    expect(<span>1</span>)
+      .to eq <span>2</span>
+
+  <span style=\"color:#a71d5d;\">end</span>
+</code></pre><pre style=\"display:block;padding:0.5em;color:#333333;overflow-x:auto;\"><code>{
+  <span style=\"color:#795da3;\">&quot;description&quot;</span>: <span style=\"color:#df5000;\">&quot;Example_Title_2&quot;</span>,
+  <span style=\"color:#795da3;\">&quot;full_description&quot;</span>: <span style=\"color:#df5000;\">&quot;Rspec_Section Example_Title_2&quot;</span>,
+  <span style=\"color:#795da3;\">&quot;status&quot;</span>: <span style=\"color:#df5000;\">&quot;pending&quot;</span>,
+  <span style=\"color:#795da3;\">&quot;file_path&quot;</span>: <span style=\"color:#df5000;\">&quot;./spec/features/example_spec.rb&quot;</span>,
+  <span style=\"color:#795da3;\">&quot;line_number&quot;</span>: <span>26</span>,
+  <span style=\"color:#795da3;\">&quot;run_time&quot;</span>: <span>0.00001</span>,
+  <span style=\"color:#795da3;\">&quot;pending_message&quot;</span>: <span style=\"color:#0086b3;\">null</span>,
+  <span style=\"color:#795da3;\">&quot;scoped_id&quot;</span>: <span style=\"color:#df5000;\">&quot;1:2&quot;</span>,
+  <span style=\"color:#795da3;\">&quot;type&quot;</span>: <span style=\"color:#df5000;\">&quot;feature&quot;</span>,
+  <span style=\"color:#795da3;\">&quot;example_group&quot;</span>: {
+    <span style=\"color:#795da3;\">&quot;scoped_id&quot;</span>: <span style=\"color:#df5000;\">&quot;1&quot;</span>,
+    <span style=\"color:#795da3;\">&quot;description&quot;</span>: <span style=\"color:#df5000;\">&quot;Rspec_Section&quot;</span>,
+    <span style=\"color:#795da3;\">&quot;full_description&quot;</span>: <span style=\"color:#df5000;\">&quot;Rspec_Section&quot;</span>
+  },
+  <span style=\"color:#795da3;\">&quot;source&quot;</span>: <span style=\"color:#df5000;\">&quot;  pending &#x27;Example_Title&#x27; do\\n    expect(1)\\n      .to eq 2\\n\\n  end\\n&quot;</span>,
+  <span style=\"color:#795da3;\">&quot;source_block&quot;</span>: <span style=\"color:#df5000;\">&quot;expect(1)\\n      .to eq 2&quot;</span>
+}</code></pre></div></div><hr/></section></article></body></html>"
+`;

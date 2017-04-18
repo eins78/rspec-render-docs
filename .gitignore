@@ -1,3 +1,6 @@
+tmp/
+bin/rspec-render-docs
+
 lib-cov
 *.seed
 *.log
@@ -14,4 +17,4 @@ results
 npm-debug.log
 node_modules
 
-bin/rspec-render-docs
+
