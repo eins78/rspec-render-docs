@@ -10,7 +10,8 @@
   },
   "scripts": {
     "rspec-docs": "babel-node ./rspec-render-docs.js",
-    "test": "npm run -s lint",
+    "test": "npm run -s lint && npm run -s test:ui",
+    "test:ui": "react-scripts test --env=jsdom",
     "prepublish": "npm run -s test && npm run -s build",
     "build": "echo '#!/usr/bin/env node' >bin/rspec-render-docs && NODE_ENV=production browserify --node -t babelify src/rspec-render-docs.js | uglifyjs >>bin/rspec-render-docs && chmod +x bin/rspec-render-docs",
     "lint": "standard --verbose *.js **/*.js"
@@ -28,7 +29,9 @@
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-markdown": "^2.4.2",
+    "react-scripts": "^0.9.5",
     "react-syntax-highlighter": "^2.9.0",
+    "react-test-renderer": "^15.5.4",
     "standard": "^8.3.0",
     "uglify": "^0.1.5"
   },

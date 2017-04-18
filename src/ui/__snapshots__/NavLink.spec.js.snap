@@ -1,0 +1,25 @@
+exports[`test renders 1`] = `
+<div>
+  <a
+    href="#title-as-heading"
+    id="title-as-heading">
+    Title as Heading
+  </a>
+  <a
+    href="#title-as-children-only"
+    id="title-as-children-only">
+    Title as Children only
+  </a>
+  <hr />
+  <a
+    href="#set-title-from-props-but-give-children"
+    id={null}>
+    Some other Children Content
+  </a>
+  <a
+    href="#title-as-children-only"
+    id={null}>
+    Title as Children only
+  </a>
+</div>
+`;
