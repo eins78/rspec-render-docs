@@ -23,18 +23,18 @@
     "src"
   ],
   "devDependencies": {
-    "babel-preset-react-app": "^0.2.1",
+    "babel-preset-react-app": "^2.2.0",
     "babelify": "^7.3.0",
-    "browserify": "^13.1.0",
+    "browserify": "^14.3.0",
     "greenkeeper-postpublish": "^1.0.1",
     "lodash": "^4.17.4",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-markdown": "^2.4.2",
     "react-scripts": "^0.9.5",
-    "react-syntax-highlighter": "^2.9.0",
+    "react-syntax-highlighter": "^5.3.0",
     "react-test-renderer": "^15.5.4",
-    "standard": "^8.3.0",
+    "standard": "^10.0.2",
     "uglify": "^0.1.5"
   },
   "babel": {
