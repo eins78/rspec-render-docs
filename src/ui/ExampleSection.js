@@ -13,7 +13,7 @@ const ExampleSection = ({ title, example, config }) => {
     example.line_number,
     example.source_block
   ]
-  const fileName = isEmpty(file_path) ||
+  const fileName = !isEmpty(file_path) &&
     file_path.replace(/^\.\//, '') + (lineNumber ? ':' + lineNumber : '')
 
   const githubLink = fileName &&
@@ -32,10 +32,10 @@ const ExampleSection = ({ title, example, config }) => {
       <h6>
         {'Source '}
         {fileName && (
-        <a href={githubLink} style={{ float: 'right' }}>
-          <kbd>{fileName}</kbd>
-        </a>
-            )}
+          <a href={githubLink} style={{ float: 'right' }}>
+            <kbd>{fileName}</kbd>
+          </a>
+        )}
       </h6>
       <CodeBlock l='ruby'>{sourceBlock}</CodeBlock>
       <div className='hook-debug' style={{ display: 'none' }}>

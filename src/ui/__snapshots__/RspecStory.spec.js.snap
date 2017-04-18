@@ -20,24 +20,29 @@ exports[`test renders 1`] = `
       <p>
         generated from RSpec test output
       </p>
+    </header>
+    <section>
       <h2>
         Overview
       </h2>
-    </header>
-    <aside
-      id="TableOfContents">
-      <ul>
-        <li>
-          <a
-            href="#rspec-section"
-            id={null}>
-            <div>
-              Rspec
-              _
-              Section
-            </div>
-          </a>
-        </li>
+      <p>
+        Examples:
+         
+        <b>
+          2
+        </b>
+         
+        <mark>
+          (
+          1
+           pending)
+        </mark>
+        <br />
+        Sections: 
+        Rspec_Section
+      </p>
+      <aside
+        id="TableOfContents">
         <ul>
           <li>
             <a
@@ -53,32 +58,45 @@ exports[`test renders 1`] = `
           <ul>
             <li>
               <a
-                href="#rspec-section-example-title"
+                href="#rspec-section"
                 id={null}>
                 <div>
-                  Example
+                  Rspec
                   _
-                  Title
+                  Section
                 </div>
               </a>
             </li>
-            <li>
-              <a
-                href="#rspec-section-example-title-2"
-                id={null}>
-                <div>
-                  Example
-                  _
-                  Title
-                  _
-                  2
-                </div>
-              </a>
-            </li>
+            <ul>
+              <li>
+                <a
+                  href="#rspec-section-example-title"
+                  id={null}>
+                  <div>
+                    Example
+                    _
+                    Title
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#rspec-section-example-title-2"
+                  id={null}>
+                  <div>
+                    Example
+                    _
+                    Title
+                    _
+                    2
+                  </div>
+                </a>
+              </li>
+            </ul>
           </ul>
         </ul>
-      </ul>
-    </aside>
+      </aside>
+    </section>
     <hr />
     <article>
       <section>

@@ -1,0 +1,15 @@
+exports[`test renders 1`] = `
+<div>
+  <mark>
+    marked text
+  </mark>
+  <hr />
+  <span>
+    not marked text
+  </span>
+  <hr />
+  <span>
+    not marked text
+  </span>
+</div>
+`;
