@@ -7,7 +7,9 @@ import f from 'active-lodash'
 import {buffer as getStdin} from 'get-stdin'
 import { renderToStaticMarkup as renderReact } from 'react-dom/server'
 import RspecStory from './ui/RspecStory'
-process.on('uncaughtException', (e) => { console.error('Error!', e); process.exit(1) })
+
+const exitOnErr = (e) => { console.error('Error!', e); process.exit(1) }
+process.on('uncaughtException', exitOnErr)
 
 // user options
 const opts = {
@@ -56,5 +58,5 @@ if (process.argv[2]) {
 } else {
   getStdin()
     .then((str) => renderFromJSONString(str))
-    .catch((err) => { throw err })
+    .catch(exitOnErr)
 }
