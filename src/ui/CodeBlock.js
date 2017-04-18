@@ -10,11 +10,11 @@ import rubyHighlight from 'highlight.js/lib/languages/ruby'
 lowlight.registerLanguage('json', jsonHighlight)
 lowlight.registerLanguage('ruby', rubyHighlight)
 
-const CodeBlock = ({l, children}) => (
+const CodeBlock = ({ l, children }) => (
   <SyntaxHighlighter
     language={l}
     style={githubGistStyle}
-    customStyle={{background: null}}
+    customStyle={{ background: null }}
     children={children || ''}
   />
 )
