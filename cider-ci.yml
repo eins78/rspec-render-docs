@@ -1,0 +1,24 @@
+---
+jobs:
+  test:
+    name: "Test with jest"
+
+    run_when:
+      any branch matches:
+        type: branch
+        include_match: "^.+$"
+
+    task_defaults:
+      traits: { nodejs: on }
+      environment_variables: { CI: 'true' }
+
+    tasks:
+      test:
+        name: "Test with jest"
+        scripts:
+          install:
+            body: npm install
+          test:
+            body: npm test 2>&1
+            start_when:
+              installed: { script_key: install, states: [passed] }
