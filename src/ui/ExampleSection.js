@@ -2,6 +2,7 @@ import React from 'react'
 import url from 'url'
 import isEmpty from 'lodash/isEmpty'
 import isNumber from 'lodash/isNumber'
+import isString from 'lodash/isString'
 import ReactMarkdown from 'react-markdown'
 
 import CodeBlock from './CodeBlock'
@@ -21,7 +22,7 @@ const ExampleSection = ({ title, example, config }) => {
     url.resolve(sourceCodeLink, file_path) +
       (lineNumber ? '#L' + lineNumber : '')
 
-  const lines = description.split('\n')
+  const lines = isString(description) ? description.split('\n') : []
   const steps = lines.slice(1).join('\n')
   const showSteps = steps || showUselessSteps
 

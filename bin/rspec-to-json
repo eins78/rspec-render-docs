@@ -1,6 +1,7 @@
 #!/bin/bash
 set -eu
 
+# use bundled scripts
 PKG_DIR="$(dirname "${BASH_SOURCE}")/$(dirname "$(readlink "${BASH_SOURCE}")")/.."
 
 # make relative if neccesary!
