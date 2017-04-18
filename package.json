@@ -23,7 +23,6 @@
     "src"
   ],
   "devDependencies": {
-    "babel-preset-react-app": "^2.2.0",
     "babelify": "^7.3.0",
     "browserify": "^14.3.0",
     "greenkeeper-postpublish": "^1.0.1",
